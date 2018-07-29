@@ -5,8 +5,32 @@
     "@rails/webpacker": "3.5",
     "vue": "^2.5.16",
     "vue-loader": "14.2.2",
-    "vue-template-compiler": "^2.5.16"
+    "vue-template-compiler": "^2.5.16",
+    "normalize.css": "^7.0.0"
   },
+  "scripts": {
+    "lint-staged": "$(yarn bin)/lint-staged"
+  },
+  "lint-staged": {
+    "config/webpack/**/*.js": [
+      "prettier --write",
+      "eslint",
+      "git add"
+    ],
+    "frontend/**/*.js": [
+      "prettier --write",
+      "eslint",
+      "git add"
+    ],
+    "frontend/**/*.css": [
+      "prettier --write",
+      "stylelint --fix",
+      "git add"
+    ]
+  },
+  "pre-commit": [
+    "lint-staged"
+  ],
   "devDependencies": {
     "webpack-dev-server": "2.11.2",
     "babel-eslint": "^8.0.1",
