@@ -2,6 +2,7 @@
   "name": "evil_chat",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.3.1",
     "@rails/webpacker": "3.5",
     "actioncable": "^5.2.0",
     "bootstrap": "^4.1.3",
