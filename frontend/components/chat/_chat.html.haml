@@ -1,4 +1,7 @@
 .chat
+  .chat--title
+    %i.fas.fa-comments
+    = session[:username]
   .chat--messages
     = c("messages", messages: messages)
   .chat--form

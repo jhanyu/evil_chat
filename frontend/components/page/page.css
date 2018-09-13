@@ -1,6 +1,14 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
 .page {
-  height: 600px;
-  width: 700px;
-  margin: 100px auto;
+  height: 100%;
+  width: 100%;
+  margin: 0;
   overflow: hidden;
 }

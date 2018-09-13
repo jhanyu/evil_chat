@@ -3,14 +3,14 @@
   height: 100%;
 
   &--input {
-    flex: 1 1 auto;
     padding: 12px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     font-size: 18px;
     outline: none;
     transition: border-color 150ms;
     box-sizing: border-box;
     resize: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 10px;
 
     &:hover,
     &:focus {
@@ -19,15 +19,15 @@
   }
 
   &--submit {
-    flex: 0 1 auto;
-    padding: 0 48px;
     background: #3f94f9;
-    border: 1px solid #3f94f9;
+    border-width: 0;
     color: white;
     font-size: 18px;
     outline: none;
     transition: opacity 150ms;
     cursor: pointer;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 10px;
 
     &:hover,
     &:focus {
